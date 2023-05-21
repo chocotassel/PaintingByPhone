@@ -41,7 +41,6 @@ export default function App() {
 
   useEffect(() => {
     if (isTracking) {
-      // 这里是一个简化的计算，你可以使用更复杂数学模型来提高精度
       setPosition({
         x: (gyroData.x + accelData.x + magnetData.x) / 3,
         y: (gyroData.y + accelData.y + magnetData.y) / 3,
@@ -70,24 +69,24 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-  flex: 1,
-  justifyContent: 'center',
-  alignItems: 'center',
-  backgroundColor: '#F5FCFF',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
   },
   text: {
-  fontSize: 20,
-  textAlign: 'center',
-  margin: 10,
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
   },
   button: {
-  backgroundColor: '#0080FF',
-  padding: 15,
-  borderRadius: 5,
-  margin: 10,
+    backgroundColor: '#0080FF',
+    padding: 15,
+    borderRadius: 5,
+    margin: 10,
   },
   buttonText: {
-  color: '#FFFFFF',
-  fontSize: 16,
+    color: '#FFFFFF',
+    fontSize: 16,
   },
   });
